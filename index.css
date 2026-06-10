@@ -1,0 +1,174 @@
+body {
+    background: #0a0f19;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 100px 30px;
+    color: #fff;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .85)),
+        url("image/bg-hero\ \(2\).png") center/cover no-repeat;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
+}
+
+.hero-content {
+    padding-top: 200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(10, 15, 25, .35) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 0;
+    height: 2px;
+
+    background: #0d6efd;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.social-links a,
+.social a {
+    color: white;
+    transition: .3s;
+}
+
+.social-links a:hover,
+.social a:hover {
+    color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+.card,
+.contact-content,
+form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    max-width: 700px;
+    color: #d6d6d6;
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.15);
+}
+
+.card:hover,
+.contact-content:hover,
+form:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(13, 110, 253, .4);
+
+    box-shadow:
+        0 15px 40px rgba(13, 110, 253, .15),
+        0 10px 30px rgba(0, 0, 0, .4);
+}
+
+.card-group {
+    gap: 20px;
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+}
+.card{
+    border-radius: 20px;
+    min-width: 300px;
+    
+}
+.card,
+.contact-content,
+form {
+    padding: 40px;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: white;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, .08);
+    color: white;
+    border-color: #0d6efd;
+    box-shadow:0 0 0 .2rem rgba(13, 110, 253, .2);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+.form-control:focus::placeholder {
+    color: rgba(255, 255, 255, .4);
+}.card,
+.contact-content,
+form,
+.project-img,
+.show {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.card.show,
+.contact-content.show,
+form.show,
+.project-img.show,
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(13,110,253,.4);
+}
+
+.project-card img{
+    height: 220px;
+    object-fit: cover;
+}
