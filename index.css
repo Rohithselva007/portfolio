@@ -13,7 +13,7 @@ body {
     background:
         linear-gradient(rgba(0, 0, 0, .65),
             rgba(0, 0, 0, .85)),
-        url("image/bg-hero\ \(2\).png") center/cover no-repeat;
+        url("image/bg-hero-2.png") center/cover no-repeat;
 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
 }
